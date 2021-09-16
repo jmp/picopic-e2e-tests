@@ -1,0 +1,14 @@
+{
+  "name": "picopic-e2e-tests",
+  "version": "0.0.1",
+  "private": true,
+  "description": "End-to-end tests for Picopic.",
+  "scripts": {
+    "test": "npx playwright-chromium test"
+  },
+  "author": "Jarkko Piiroinen",
+  "license": "MIT",
+  "dependencies": {
+    "@playwright/test": "^1.14.1"
+  }
+}
