@@ -1,0 +1,16 @@
+name: tests
+
+on:
+  push:
+    branches: [master]
+    paths-ignore:
+      - README.md
+      - LICENSE
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm ci
+      - run: npm test
